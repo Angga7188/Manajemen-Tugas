@@ -1,0 +1,53 @@
+#header {
+    color: blue;
+    font-weight: bold;
+}
+
+.highlight {
+    font-size: 30px;
+    background-color: orange
+}
+
+.alt-highlight {
+    color: aqua;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 200%;
+    margin-bottom: 5px;
+}
+
+i {
+    color: green;
+    font-weight: bold;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333333;
+    display: flex;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
