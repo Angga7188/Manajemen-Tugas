@@ -1,4 +1,3 @@
-localStorage.setItem('halamanTersimpan', document.body.innerHTML);
 document.addEventListener("DOMContentLoaded", loadTasks);
 function loadTasks() {
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -56,10 +55,4 @@ function deleteTask(taskText, taskElement) {
     tasks = tasks.filter((task) => task.text !== taskText);
     localStorage.setItem("tasks", JSON.stringify(tasks));
     taskElement.remove();
-}
-window.onload = function () {
-    const halamanTersimpan = localStorage.getItem('halamanTersimpan');
-    if (halamanTersimpan) {
-        document.body.innerHTML = halamanTersimpan;
-    }
 }
